@@ -527,6 +527,23 @@ p {
 #footer .social-item:hover img {
 	filter: grayscale(0);
 }
+/* Link styles */
+div a {
+    color: aqua;
+	text-decoration: none;/* Change to your desired link color */
+    
+}
+
+div a:hover {
+    text-decoration: underline;
+}
+
+/* Heading styles within the link */
+div a h1 {
+    font-size: 24px; /* Change to your desired font size */
+    font-weight: bold; /* Optionally, set font-weight to bold */
+}
+
 #footer p {
 	color: white;
 	font-size: 1.3rem;
