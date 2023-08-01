@@ -71,6 +71,13 @@ p {
 .brand h1 span {
 	color: crimson;
 }
+/* Example CSS for logo positioning and sizing */
+.logo-link img {
+	height: 50px; /* Adjust the height as needed */
+	width: auto; /* Preserve the aspect ratio */
+	/* Additional styles as per your design */
+  }
+  
 
 /* Header section */
 #header {
@@ -327,6 +334,47 @@ p {
 }
 /* End Services Section */
 
+/* Reset some default styling */
+
+  
+  /* Center the skill list */
+  .skills.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh; /* Adjust this value based on your layout */
+  }
+  
+  /* Style the skill items */
+  .skills-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 20px;
+	max-width: 900px;
+	width: 100%;
+	padding: 20px;
+  }
+  
+  .skill-item {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 15px;
+	text-align: center;
+  }
+  
+  /* Style the section title */
+  .section-title {
+	font-size: 32px;
+	font-weight: 300;
+  }
+  
+  .section-title span {
+	color: crimson; /* Change this color to your preferred highlight color */
+  }
+  
+  
+
 /* Projects section */
 #projects .projects {
 	flex-direction: column;
@@ -389,7 +437,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: -moz-linear-gradient();
 	opacity: 0.7;
 }
 #projects .project-img img {
@@ -399,6 +447,9 @@ p {
 	transform: scale(1.1);
 }
 /* End Projects section */
+
+
+  
 
 /* About Section */
 #about .about {
