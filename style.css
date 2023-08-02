@@ -331,43 +331,7 @@ p {
 
 /* Reset some default styling */
 
-  
-  /* Center the skill list */
-  .skills.container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 100vh; /* Adjust this value based on your layout */
-  }
-  
-  /* Style the skill items */
-  .skills-list {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	grid-gap: 20px;
-	max-width: 900px;
-	width: 100%;
-	padding: 20px;
-  }
-  
-  .skill-item {
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	padding: 15px;
-	text-align: center;
-  }
-  
-  /* Style the section title */
-  .section-title {
-	font-size: 32px;
-	font-weight: 300;
-  }
-  
-  .section-title span {
-	color: crimson; /* Change this color to your preferred highlight color */
-  }
-  
+ 
   
 
 /* Projects section */
@@ -443,7 +407,55 @@ p {
 }
 /* End Projects section */
 
-
+ 
+  /* Center the skill list */
+.skills.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px; /* Add padding for spacing */
+	height: auto; /* Remove fixed height */
+  }
+  
+  /* Style the skill items */
+  .skills-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 20px;
+	max-width: 900px;
+	width: 100%;
+  }
+  
+  .skill-item {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 15px;
+	text-align: center;
+  }
+  
+  /* Style the section title */
+  .section-title {
+	font-size: 32px;
+	font-weight: 300;
+	margin-bottom: 20px; /* Add margin for spacing */
+  }
+  
+  .section-title span {
+	color: crimson; /* Change this color to your preferred highlight color */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+	.skills-list {
+	  grid-template-columns: 1fr; /* Single column layout on smaller screens */
+	}
+	
+	.skill-item {
+	  padding: 10px; /* Adjust padding for smaller screens */
+	}
+  }
+  
   
 
 /* About Section */
