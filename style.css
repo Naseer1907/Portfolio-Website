@@ -66,7 +66,7 @@ p {
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
-	color: white;
+	color: white
 }
 .brand h1 span {
 	color: crimson;
@@ -587,7 +587,7 @@ p {
 }
 /* Link styles */
 div a {
-    color:azure ;
+    color:aqua ;
 	text-decoration: none;/* Change to your desired link color */
     
 }
