@@ -1,0 +1,137 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up the background */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header section */
+.section-header {
+  background-color: #1da9c0;
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.section-header h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.section-header p {
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+/* Style the contact info section */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.contact-info-item {
+  flex-basis: calc(33.33% - 20px);
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info-icon {
+  background-color: #1da9c0;
+  color: #fff;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 1.5em;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info-details h1, .contact-info-details h2 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+/* Style the contact form section */
+.contact-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  padding-left: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  padding-left: 10px;
+  appearance: none;
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-512.png') no-repeat right center;
+  background-size: 18px 18px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input[type="submit"] {
+  background-color: #1da9c0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #157a8e;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info-item {
+    flex-basis: 100%;
+  }
+}
