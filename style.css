@@ -587,10 +587,8 @@ p {
 	width: 50px;
 	margin: 0 5px;
 }
-#footer .social-item img {
-	filter: grayscale(1);
-	transition: 0.3s ease filter;
-}
+
+
 #footer .social-item:hover img {
 	filter: grayscale(0);
 }
