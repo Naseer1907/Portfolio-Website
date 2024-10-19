@@ -275,67 +275,119 @@ p {
 /* End Hero Section */
 
 
-/* Services Section */
-#services .services {
-	flex-direction: column;
-	text-align: center;
-	max-width: 1500px;
-	margin: 0 auto;
-	padding: 100px 0;
-}
-#services .service-top {
-	max-width: 500px;
-	margin: 0 auto;
-}
-#services .service-bottom {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 50px;
-}
-#services .service-item {
-	flex-basis: 80%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	padding: 30px;
-	border-radius: 10px;
-	background-image: url(./img/img-1.png);
-	background-size: cover;
-	margin: 10px 5%;
+/* Experience Section */
+/* Experience Section Styling */
+/* Experience Section Styling */
+#experience {
+	padding: 60px 0;
+	background-color: #f0f0f0;
 	position: relative;
-	z-index: 1;
-	overflow: hidden;
-}
-#services .service-item::after {
+  }
+  
+  .experience-title {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 40px;
+	animation: slideInFromTop 1.5s ease-out;
+  }
+  
+  /* Timeline Styling */
+  .timeline {
+	position: relative;
+	padding: 0;
+	margin: 0 auto;
+	max-width: 800px;
+  }
+  
+  .timeline-item {
+	position: relative;
+	margin: 20px 0;
+	padding-left: 50px;
+	animation: fadeInUp 1.5s ease-out;
+  }
+  
+  .timeline-icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #ff6347; /* Icon color */
+	color: #fff;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	transition: background-color 0.3s;
+  }
+  
+  .timeline-icon:hover {
+	background-color: #ff4500;
+  }
+  
+  .timeline-content {
+	background-color: #fff;
+	padding: 15px 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-role {
+	font-size: 24px;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 5px;
+  }
+  
+  .job-position, .job-duration, .job-location {
+	font-size: 16px;
+	color: #666;
+	margin-bottom: 5px;
+  }
+  
+  .job-description {
+	font-size: 16px;
+	color: #555;
+  }
+  
+  /* Animations */
+  @keyframes slideInFromTop {
+	from {
+	  transform: translateY(-50px);
+	  opacity: 0;
+	}
+	to {
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes fadeInUp {
+	from {
+	  transform: translateY(20px);
+	  opacity: 0;
+	}
+	to {
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+  }
+  
+  /* Timeline Line */
+  .timeline::before {
 	content: '';
 	position: absolute;
-	left: 0;
 	top: 0;
+	left: 20px;
+	width: 2px;
 	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.9;
-	z-index: -1;
-}
-#services .service-bottom .icon {
-	height: 80px;
-	width: 80px;
-	margin-bottom: 20px;
-}
-#services .service-item h2 {
-	font-size: 2rem;
-	color: white;
-	margin-bottom: 10px;
-	text-transform: uppercase;
-}
-#services .service-item p {
-	color: white;
-	text-align: left;
-}
-/* End Services Section */
+	background-color: #ff6347;
+  }
+  
+	
+/* End Experience Section */
 
 /* Reset some default styling */
 
