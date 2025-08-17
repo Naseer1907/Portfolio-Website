@@ -1,137 +1,120 @@
-/* Reset some default styles */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Set up the background */
 body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f6f9;
 }
 
-/* Style the header section */
-.section-header {
-  background-color: #1da9c0;
-  padding: 50px 0;
+/* Certificates Section */
+#certificates {
+  padding: 60px 20px;
   text-align: center;
-  color: #fff;
 }
 
-.section-header h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.section-header p {
-  font-size: 1.2em;
-  line-height: 1.4;
-}
-
-/* Style the contact info section */
-.contact-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.contact-info-item {
-  flex-basis: calc(33.33% - 20px);
-  text-align: center;
-  margin: 10px;
-  padding: 15px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.contact-info-icon {
-  background-color: #1da9c0;
-  color: #fff;
-  border-radius: 50%;
-  padding: 20px;
-  font-size: 1.5em;
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-info-details h1, .contact-info-details h2 {
-  margin-top: 10px;
-  font-size: 1.2em;
-}
-
-/* Style the contact form section */
-.contact-form {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.contact-form h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.input-box {
-  margin-bottom: 20px;
+#certificates h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+  font-weight: 700;
   position: relative;
+  display: inline-block;
 }
 
-label {
+#certificates h2::after {
+  content: "";
   display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
+  width: 60%;
+  height: 4px;
+  background: #ff9800;
+  margin: 10px auto 0;
+  border-radius: 2px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+/* Certificate Grid */
+.cert-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Certificate Card */
+.cert-card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-card h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.cert-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Hover Effects */
+.cert-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.cert-card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1em;
-  padding-left: 10px;
+  height: 100%;
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  opacity: 0.1;
+  transition: top 0.4s ease;
 }
 
-select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1em;
-  padding-left: 10px;
-  appearance: none;
-  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-512.png') no-repeat right center;
-  background-size: 18px 18px;
+.cert-card:hover::before {
+  top: 0;
 }
 
-select::-ms-expand {
-  display: none;
-}
-
-input[type="submit"] {
-  background-color: #1da9c0;
-  color: #fff;
-  border: none;
+/* Certificate Link (Button Style) */
+.cert-card a {
+  display: inline-block;
   padding: 10px 20px;
-  font-size: 1.2em;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  background: #ff9800;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
-input[type="submit"]:hover {
-  background-color: #157a8e;
+.cert-card a:hover {
+  background: #e68900;
+  transform: scale(1.05);
 }
 
-@media screen and (max-width: 768px) {
-  .contact-info-item {
-    flex-basis: 100%;
-  }
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+  font-size: 0.9rem;
 }
