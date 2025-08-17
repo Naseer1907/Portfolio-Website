@@ -800,17 +800,5 @@ div a h1 {
 		display: none;
 	}
 	/* End header */
-
-	#services .service-bottom .service-item {
-		flex-basis: 22%;
-		margin: 1.5%;
-
-		@media (min-width: 1024px) {
-   nav {
-     margin-top: ___; /* may cause misalignment */
-   }
-}
-
-	}
 }
 /* End  Media Query For Desktop */
