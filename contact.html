@@ -1,94 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-  <title>Contact Us </title>
-  <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Mohammed Naseeruddin - Software Engineer. Get in touch for collaboration, job opportunities, or project discussions.">
+    <meta name="keywords" content="Contact Mohammed Naseeruddin, Software Engineer Contact, Portfolio Contact">
+    <meta name="author" content="Mohammed Naseeruddin">
+    
+    <title>Contact Mohammed Naseeruddin - Software Engineer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📧</text></svg>">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact Mohammed Naseeruddin - Software Engineer">
+    <meta property="og:description" content="Get in touch for collaboration, job opportunities, or project discussions.">
+    <meta property="og:type" content="website">
 </head>
+
 <body>
-  <section>
-    <div class="section-header">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <p>Have a question or need assistance? Feel free to reach out to us. We're here to help! Whether it's a general
-          inquiry, Project Inquiry, Resume Templates, or you'd like to provide feedback, our team is ready to assist you. Simply select
-          the appropriate topic from the dropdown, fill in your details, and type your message. We'll get back to you as
-          soon as possible. Your feedback and questions are important to us.</p>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="contact-info">
-          <div class="contact-info-item">
-            <div class="contact-info-icon">
-              <i class="fas fa-home"></i>
+    <!-- Navigation -->
+    <nav class="navbar" style="position: relative; background: var(--color-surface); box-shadow: var(--shadow-md);">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">Mohammed</span><span class="logo-dot">.</span>
+                </a>
             </div>
-            <div class="contact-info-details">
-              <a href="https://www.google.com/maps/place/Kalaburagi,+Karnataka/@17.3389883,76.7575373,12z/data=!3m1!4b1!4m6!3m5!1s0x3bc8c7455b824e57:0x44cbe3366957ed9f!8m2!3d17.329731!4d76.8342957!16zL20vMDE0Z3N3?entry=ttu" target="_blank">
-                <h1>Address</h1>
-              </a>
-              <h2>Kalaburagi, Karnataka - India</h2>
+            <div class="nav-actions">
+                <a href="index.html" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Portfolio</span>
+                </a>
             </div>
-          </div>
-          <div class="contact-info-item">
-            <div class="contact-info-icon">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div class="contact-info-details">
-              <a href="tel:+91 94833 67160." target="_blank">
-                <h1>Phone</h1>
-              </a>
-              <h2>Contact me via email only.</h2>
-            </div>
-          </div>
-          <div class="contact-info-item">
-            <div class="contact-info-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="contact-info-details">
-              <a href="mailto:smnaseer1907@gmail.com">
-                <h1>Email</h1>
-              </a>
-              <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=smnaseer1907@gmail.com" target="_blank"></a>
-              <h2>work.naseer19@gmail.com</h2>
-            </div>
-          </div>
         </div>
-        <div class="contact-form">
-          <form action="https://formspree.io/f/xyyqvoey" method="POST">
-            <h2>Send Message</h2>
-            <div class="input-box">
-              <label for="topic">Topic</label>
-              <select id="topic" name="topic" required="true">
-                <option value="" disabled selected>Select a Topic</option>
-                <option value="General Inquiry">General Inquiry</option>
-                <option value="Resume Tempelates">Resume Templates</option>
-                <option value="Project Related">Project Related</option>
-                <option value="Projects for You">Projects for You</option>
-                <option value="Feedback">Feedback</option>
-              </select>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section section-padding">
+        <div class="container">
+            <!-- Dynamic Header for Special Requests -->
+            <div class="contact-form-header" id="form-header-message" style="display: none;">
+                <div class="form-purpose-notice">
+                    <h3 id="form-purpose-title">Special Request</h3>
+                    <p id="form-purpose-description">Please fill out the form below with your request details.</p>
+                </div>
             </div>
-            <div class="input-box">
-              <label for="full_name">Full Name</label>
-              <input type="text" id="full_name" required="true" name="full_name">
+
+            <div class="section-header">
+                <div class="section-subtitle">Let's Connect</div>
+                <h1 class="section-title">Get In Touch</h1>
+                <p>Ready to collaborate or discuss opportunities? I'd love to hear from you!</p>
             </div>
-            <div class="input-box">
-              <label for="email">Email</label>
-              <input type="email" id="email" required="true" name="email">
+
+            <div class="contact-content">
+                <!-- Contact Information Cards -->
+                <div class="contact-info stagger-children">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Me</h4>
+                            <p>Let's discuss your project or opportunities</p>
+                            <a href="mailto:work.naseer19@gmail.com" class="contact-link">work.naseer19@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Me</h4>
+                            <p>Available for consultation and discussion</p>
+                            <a href="tel:+919483367160" class="contact-link">+91 94833 67160</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Currently based in India</p>
+                            <span class="contact-link">Kalaburagi, Karnataka</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Connect</h4>
+                            <p>Professional network and updates</p>
+                            <a href="https://linkedin.com/in/naseer1907" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn Profile</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p>Check out my code and projects</p>
+                            <a href="https://github.com/naseer1907" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+                <!-- FIXED: Working Formspree Contact Form -->
+                <form action="https://formspree.io/f/xldwrzvn" method="POST" class="contact-form" id="contact-form">
+                    
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name *</label>
+                        <input type="text" name="name" id="name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address *</label>
+                        <input type="email" name="_replyto" id="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject *</label>
+                        <input type="text" name="subject" id="subject" class="form-control" required placeholder="e.g., Job Opportunity, Project Collaboration, General Inquiry">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea name="message" id="message" class="form-control" rows="6" required placeholder="Tell me about your project, opportunity, or question. I'd love to hear from you!"></textarea>
+                    </div>
+
+                    <!-- Formspree Configuration -->
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                    <input type="hidden" name="source" value="Portfolio Contact Page">
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    
+                    <!-- Spam Protection -->
+                    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span class="btn-text">Send Message</span>
+                        <i class="fas fa-paper-plane btn-icon"></i>
+                    </button>
+
+                    <!-- Form Status Messages -->
+                    <div id="form-status" class="form-status" style="display: none;"></div>
+
+                </form>
             </div>
-            <div class="input-box">
-              <label for="message">Message</label>
-              <textarea id="message" required="true" name="message"></textarea>
+             <!-- Privacy Notice -->
+                <div class="privacy-notice" style="text-align: center; margin: 2rem 0; padding: 1rem; background: rgba(37, 99, 235, 0.05); border-radius: 8px; border: 1px solid rgba(37, 99, 235, 0.1);">
+                    <p style="margin: 0; font-size: 0.875rem; color: var(--color-text-secondary);">
+                        <i class="fas fa-info-circle" style="color: var(--color-primary);"></i>
+                        By submitting this form, you consent to the collection and processing of your personal data 
+                        as described in our 
+                        <a href="privacy-policy.html" target="_blank" style="color: var(--color-primary); text-decoration: underline;">Privacy Policy</a>.
+                        Your data is protected under Indian privacy laws.
+                    </p>
+                </div>
+
+
+
+
+
+            <!-- Additional Contact Methods -->
+            <div class="contact-cta" style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--color-surface); border-radius: var(--radius-lg);">
+                <h3>Prefer a Direct Approach?</h3>
+                <p>You can also reach me directly through these channels:</p>
+                <div class="contact-direct-links" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                    <a href="mailto:work.naseer19@gmail.com" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email Directly</span>
+                    </a>
+                    <a href="https://linkedin.com/in/naseer1907" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn Message</span>
+                    </a>
+                    <a href="https://github.com/naseer1907" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
             </div>
-            <div class="input-box">
-              <input type="submit" value="Send">
-            </div>
-          </form>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: var(--color-surface); padding: 2rem 0; text-align: center; border-top: 1px solid var(--color-border);">
+        <div class="container">
+            <p>&copy; 2025 Mohammed Naseeruddin. All rights reserved.</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="index.html" style="color: var(--color-primary);">← Back to Portfolio</a> | 
+                <a href="privacy-policy.html" target="_blank" style="color: var(--color-primary);">Privacy Policy</a> | 
+                <a href="terms.html" target="_blank" style="color: var(--color-primary);">Terms of Use</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // FIXED: Simple Contact Form - No Formspree Override
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const subjectParam = urlParams.get('subject');
+            const formHeader = document.getElementById('form-header-message');
+            const purposeTitle = document.getElementById('form-purpose-title');
+            const purposeDesc = document.getElementById('form-purpose-description');
+            const timestampField = document.getElementById('timestamp');
+            
+            // Set timestamp
+            if (timestampField) {
+                const now = new Date();
+                timestampField.value = now.toLocaleString('en-IN', {
+                    timeZone: 'Asia/Kolkata',
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    hour12: false
+                }) + ' IST';
+            }
+            
+            // Handle special requests from URL parameters
+            if (subjectParam && formHeader && purposeTitle && purposeDesc) {
+                formHeader.style.display = 'block';
+                
+                const subjectField = document.getElementById('subject');
+                const messageField = document.getElementById('message');
+                
+                if (subjectParam === 'Website Licensing Request') {
+                    purposeTitle.textContent = '🔒 Website Licensing Request';
+                    purposeDesc.innerHTML = `
+                        <strong>Thank you for your interest in licensing my website!</strong><br>
+                        Please provide details about your intended use, and I'll get back to you with 
+                        licensing terms, pricing, and usage guidelines within 24 hours.
+                    `;
+                    document.title = 'Website Licensing Request - Contact Mohammed Naseeruddin';
+                    
+                    if (subjectField && messageField) {
+                        subjectField.value = 'Website Licensing Request';
+                        messageField.value = `Hi Mohammed,
+
+I am interested in licensing your website design, code, or content for my project.
+
+Please provide information about:
+- Licensing terms and conditions
+- Usage rights and restrictions  
+- Pricing structure
+- Attribution requirements
+
+Project Details:
+- [Brief description of intended use]
+- [Commercial/Non-commercial usage]
+- [Timeline and scope]
+
+Thank you for your time.
+
+Best regards,`;
+                    }
+                    
+                } else if (subjectParam === 'Legal Inquiry') {
+                    purposeTitle.textContent = '⚖️ Legal Inquiry';
+                    purposeDesc.innerHTML = `
+                        <strong>Legal matters receive priority attention.</strong><br>
+                        Please describe your legal question or concern in detail. All legal inquiries 
+                        are handled confidentially and will receive a response within 7 business days.
+                    `;
+                    document.title = 'Legal Inquiry - Contact Mohammed Naseeruddin';
+                    
+                    if (subjectField && messageField) {
+                        subjectField.value = 'Legal Inquiry';
+                        messageField.value = `Hi Mohammed,
+
+I have a legal inquiry regarding your website/portfolio.
+
+Nature of Inquiry:
+- [Copyright/Trademark/Privacy/Terms of Use/Other]
+
+Details:
+- [Please describe your legal question or concern]
+
+Contact Information:
+- [Your preferred contact method]
+
+Thank you for your attention to this matter.
+
+Best regards,`;
+                    }
+                }
+                
+                // Focus on name field and scroll to form
+                if (document.getElementById('name')) {
+                    document.getElementById('name').focus();
+                }
+                
+                setTimeout(() => {
+                    const form = document.getElementById('contact-form');
+                    if (form) {
+                        form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }, 500);
+            }
+            
+            // Simple form submission handling (no override, just UI feedback)
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function() {
+                    const submitBtn = contactForm.querySelector('button[type="submit"]');
+                    const btnText = submitBtn.querySelector('.btn-text');
+                    const btnIcon = submitBtn.querySelector('.btn-icon');
+                    
+                    if (submitBtn && btnText) {
+                        submitBtn.disabled = true;
+                        btnText.textContent = 'Sending...';
+                        if (btnIcon) btnIcon.className = 'fas fa-spinner fa-spin btn-icon';
+                        
+                        // Let Formspree handle the rest - no fetch override
+                        // Form will submit naturally and redirect to Formspree's thank you page
+                    }
+                });
+            }
+            
+            // Form field validation styling
+            const inputs = contactForm.querySelectorAll('input[required], textarea[required]');
+            inputs.forEach(input => {
+                input.addEventListener('blur', function() {
+                    if (!this.value.trim()) {
+                        this.style.borderColor = 'var(--color-error)';
+                        this.classList.add('invalid');
+                        this.classList.remove('valid');
+                    } else if (this.type === 'email' && !isValidEmail(this.value)) {
+                        this.style.borderColor = 'var(--color-error)';
+                        this.classList.add('invalid');
+                        this.classList.remove('valid');
+                    } else {
+                        this.style.borderColor = 'var(--color-success)';
+                        this.classList.add('valid');
+                        this.classList.remove('invalid');
+                    }
+                });
+                
+                input.addEventListener('input', function() {
+                    this.style.borderColor = 'var(--color-border)';
+                    this.classList.remove('valid', 'invalid');
+                });
+            });
+            
+            function isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+        });
+    </script>
+
+    <!-- Enhanced Styling -->
+    <style>
+        /* Contact Form Header Styling */
+        .contact-form-header {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(59, 130, 246, 0.05));
+            border-left: 4px solid var(--color-primary);
+            border-radius: var(--radius-lg);
+        }
+
+        .form-purpose-notice h3 {
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-bold);
+        }
+
+        .form-purpose-notice p {
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .form-status {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: var(--radius-base);
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .form-status.success {
+            background-color: rgba(34, 197, 94, 0.1);
+            color: var(--color-success);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+        }
+        
+        .form-status.error {
+            background-color: rgba(239, 68, 68, 0.1);
+            color: var(--color-error);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
+        
+        .contact-direct-links .btn {
+            min-width: 150px;
+        }
+        
+        .nav-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Form validation styling */
+        .form-control.valid {
+            border-color: var(--color-success) !important;
+        }
+
+        .form-control.invalid {
+            border-color: var(--color-error) !important;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-direct-links {
+                flex-direction: column;
+            }
+            
+            .nav-actions .btn span {
+                display: none;
+            }
+
+            .contact-form-header {
+                padding: 1rem;
+            }
+
+            .form-purpose-notice h3 {
+                font-size: var(--font-size-base);
+            }
+        }
+    </style>
 </body>
 </html>
