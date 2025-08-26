@@ -1005,25 +1005,26 @@ img {
   padding: var(--space-8);
 }
 
+/* Set your preferred blue here */
 .nav-toggle .bar {
   width: 25px;
   height: 3px;
-  background: var(--color-text);
+  background: var(--color-primary, #2563eb); /* Use your theme blue variable or fallback */
   border-radius: var(--radius-sm);
   transition: all var(--duration-normal) var(--ease-standard);
 }
 
+/* Active (X/close shape) styles remain the same */
 .nav-toggle.active .bar:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
-
 .nav-toggle.active .bar:nth-child(2) {
   opacity: 0;
 }
-
 .nav-toggle.active .bar:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -6px);
 }
+
 
 /* ===========================================
    BUTTONS
@@ -1100,6 +1101,7 @@ img {
    HERO SECTION
    =========================================== */
 .hero {
+  padding-top: 80px;
   min-height: 100vh;
   background: linear-gradient(135deg, var(--color-slate-900) 0%, var(--color-charcoal-700) 50%, var(--color-slate-500) 100%);
   display: flex;
