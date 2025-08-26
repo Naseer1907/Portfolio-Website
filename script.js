@@ -208,52 +208,58 @@ function initScrollEffects() {
 
 // Typing Effect
 function initTypingEffect() {
-    const typingText = document.querySelector('.typing-text');
-    const cursor = document.querySelector('.cursor');
-    
-    if (!typingText) return;
-    
-    const texts = [
-        'Data Analyst',
-        'Software Engineer',
-        'Python Developer',
-        'AI/ML Enthusiast', 
-        'Problem Solver'
-    ];
-    
-    let textIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let typingSpeed = 100;
-    
-    function typeWriter() {
-        const currentText = texts[textIndex];
-        
-        if (isDeleting) {
-            typingText.textContent = currentText.substring(0, charIndex - 1);
-            charIndex--;
-            typingSpeed = 50;
-        } else {
-            typingText.textContent = currentText.substring(0, charIndex + 1);
-            charIndex++;
-            typingSpeed = 100;
-        }
-        
-        if (!isDeleting && charIndex === currentText.length) {
-            setTimeout(() => { isDeleting = true; }, 1000);
-            typingSpeed = 50;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            textIndex = (textIndex + 1) % texts.length;
-            typingSpeed = 100;
-        }
-        
-        setTimeout(typeWriter, typingSpeed);
+  const typingText = document.querySelector('.typing-text');
+  const cursor = document.querySelector('.cursor');
+
+  if (!typingText) return;
+
+  const texts = [
+    'Data Analyst',
+    'Software Engineer',
+    'Python Developer',
+    'AI/ML Enthusiast', 
+    'Problem Solver'
+  ];
+
+  let textIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let typingSpeed = 100;
+
+  function typeWriter() {
+    const currentText = texts[textIndex];
+
+    if (isDeleting) {
+      typingText.textContent = currentText.substring(0, charIndex - 1);
+      charIndex--;
+      typingSpeed = 50; // Faster deleting
+    } else {
+      typingText.textContent = currentText.substring(0, charIndex + 1);
+      charIndex++;
+      typingSpeed = 100; // Normal typing speed
     }
-    
-    // Start typing animation
-    typeWriter();
+
+    if (!isDeleting && charIndex === currentText.length) {
+      // Pause at full text
+      setTimeout(() => { isDeleting = true; typeWriter(); }, 1000);
+      return; // do not schedule next call here
+    } else if (isDeleting && charIndex === 0) {
+      // Move to next word after deletion
+      isDeleting = false;
+      textIndex = (textIndex + 1) % texts.length;
+      setTimeout(typeWriter, 500); // Short pause before typing next word
+      return;
+    }
+
+    setTimeout(typeWriter, typingSpeed);
+  }
+
+  // Start animation
+  typeWriter();
 }
+
+document.addEventListener('DOMContentLoaded', initTypingEffect);
+
 
 // Contact Form
 function initContactForm() {
