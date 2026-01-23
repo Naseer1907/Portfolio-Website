@@ -55,10 +55,10 @@
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#home" class="nav-link active">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
         <li><a href="contact.html" target="_blank" class="nav-link">Contact</a></li>
       </ul>
 
@@ -183,6 +183,68 @@
         </p1>
         </p>
       </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Experience Section -->
+
+  <section id="experience" class="experience section section-padding">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">My Journey</div>
+        <h2 class="section-title">Professional Experience</h2>
+        <p>Key milestones and achievements in my career journey.</p>
+      </div>
+
+      <div class="experience-timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-date">Aug 2024 - Present</div>
+              <h3>Programmer Analyst</h3>
+              <h4>Tata Consultancy Services</h4>
+              <div class="timeline-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Hyderabad, India</span>
+              </div>
+            </div>
+            <div class="timeline-body">
+              <ul class="timeline-achievements">
+                <li>Drove the secure rollout of AI Garden, TCS’s enterprise LLM platform, by implementing cloud access
+                  controls and preparing AWS infrastructure to support AI-enabled workloads at scale.</li>
+
+                <li>Built and optimized scalable AWS environments (EC2, S3, IAM) to support AI and application
+                  deployments, improving security posture and runtime performance.</li>
+
+                <li>Established IAM least-privilege policies and governance controls, enabling controlled enterprise
+                  access to AI services while reducing security exposure.</li>
+
+                <li>Improved reliability of Linux-based cloud systems through configuration and stability enhancements,
+                  ensuring consistent production uptime.</li>
+
+                <li>Integrated AWS infrastructure with Git/GitHub CI/CD pipelines, enabling repeatable and consistent
+                  deployments across teams.</li>
+
+
+              </ul>
+              <div class="timeline-skills">
+                <span class="skill-tag">Problem-Solving</span>
+                <span class="skill-tag">AI Cloud Applications</span>
+                <span class="skill-tag">AWS (EC2, S3, IAM, VPC, CloudWatch)</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Terraform</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    </div>
     </div>
     </div>
   </section>
@@ -326,63 +388,149 @@
     </div>
   </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="experience section section-padding">
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section section-padding">
     <div class="container">
       <div class="section-header">
-        <div class="section-subtitle">My Journey</div>
-        <h2 class="section-title">Professional Experience</h2>
-        <p>Key milestones and achievements in my career journey.</p>
+        <div class="section-subtitle">My Work</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p>A showcase of my recent projects demonstrating technical skills and problem-solving abilities.</p>
       </div>
 
-      <div class="experience-timeline">
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div class="timeline-date">Aug 2024 - Present</div>
-              <h3>Programmer Analyst</h3>
-              <h4>Tata Consultancy Services</h4>
-              <div class="timeline-location">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Hyderabad, India</span>
+      <div class="projects-grid stagger-children">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="img/AI-Powered Driver safety.png"
+              alt="AI Voice Assistant">
+            <div class="project-overlay">
+              <div class="project-links">
+
+                <a href="https://github.com/naseer1907/" target="_blank" class="project-link" aria-label="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
               </div>
             </div>
-            <div class="timeline-body">
-              <ul class="timeline-achievements">
-                <li>Drove the secure rollout of AI Garden, TCS’s enterprise LLM platform, by implementing cloud access
-                  controls and preparing AWS infrastructure to support AI-enabled workloads at scale.</li>
-
-                <li>Built and optimized scalable AWS environments (EC2, S3, IAM) to support AI and application
-                  deployments, improving security posture and runtime performance.</li>
-
-                <li>Established IAM least-privilege policies and governance controls, enabling controlled enterprise
-                  access to AI services while reducing security exposure.</li>
-
-                <li>Improved reliability of Linux-based cloud systems through configuration and stability enhancements,
-                  ensuring consistent production uptime.</li>
-
-                <li>Integrated AWS infrastructure with Git/GitHub CI/CD pipelines, enabling repeatable and consistent
-                  deployments across teams.</li>
-
-
-              </ul>
-              <div class="timeline-skills">
-                <span class="skill-tag">Problem-Solving</span>
-                <span class="skill-tag">AI Cloud Applications</span>
-                <span class="skill-tag">AWS (EC2, S3, IAM, VPC, CloudWatch)</span>
-                <span class="skill-tag">Linux</span>
-                <span class="skill-tag">Git & GitHub</span>
-                <span class="skill-tag">Terraform</span>
-              </div>
+          </div>
+          <div class="project-content">
+            <h3>AI-Powered Driver Safety Voice Assistant</h3>
+            <ul>
+              <li>Enabled hands-free driver interaction by developing a voice-activated assistant using Python and NLP,
+                resulting in safer
+                access to navigation and weather information.</li>
+              <li>Improved driver safety awareness by integrating the OpenWeather API for real-time condition alerts,
+                resulting in better
+                decision-making during adverse weather.</li>
+              <li>Maintained reliable response performance by applying NumPy-based data processing and modular design,
+                resulting in
+                efficient and consistent system behavior</li>
+            </ul>
+            <div class="project-tech">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">NLP</span>
+              <span class="skill-tag">Speech Recognition</span>
+              <span class="skill-tag">Automation Tasks</span>
+              <span class="skill-tag">API's Integration</span>
             </div>
           </div>
         </div>
 
+        <div class="project-card">
+          <div class="project-image">
+            <img src="img/Cloud Engineer.png"
+              alt="CLoud Engineer">
+            <div class="project-overlay">
+              <div class="project-links">
 
+
+                <a href="https://github.com/naseer1907/" target="_blank" class="project-link" aria-label="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Family Cloud infrastructure</h3>
+            <ul>
+              <li>Built a secure cloud document platform by designing AWS infrastructure using EC2, S3, IAM, and VPC,
+                resulting in
+                controlled access and reliable data storage.</li>
+              <li>Improved deployment consistency and security by automating infrastructure provisioning with Terraform
+                and enforcing
+                least-privilege IAM, resulting in repeatable and compliant environments.</li>
+              <li>Enhanced system observability by configuring CloudWatch monitoring and logging, resulting in improved
+                visibility into system health and operations.</li>
+            </ul>
+            <div class="project-tech">
+              <span class="skill-tag">EC2</span>
+              <span class="skill-tag">IAM</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Git & GitHub</span>
+              <span class="skill-tag">Terraform</span>
+            </div>
+          </div>
+        </div>
+        <!--
+         <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/400x250/10b981/ffffff?text=Resume+Builder"
+              alt="Resume Builder Application">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Project">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Professional Resume Builder</h3>
+            <p>
+              Modern web application for creating professional resumes with customizable templates,
+              real-time preview, and PDF export functionality. Features drag-and-drop interface and ATS optimization.
+            </p>
+            <div class="project-tech">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">PDF.js</span>
+              <span class="skill-tag">Responsive</span>
+            </div>
+          </div>
+        </div>
+      -->
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop&crop=center"
+              alt="Portfolio Website">
+            <div class="project-overlay">
+              <div class="project-links">
+
+                <a href="https://naseerportfolio.netlify.app" class="project-link" aria-label="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Responsive Portfolio Website</h3>
+            <p>
+              Modern, responsive portfolio website showcasing projects and skills with smooth animations,
+              interactive elements, and optimized performance. Features adaptive color system and accessibility focus.
+            </p>
+            <div class="project-tech">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Responsive</span>
+              <span class="skill-tag">Perplexity AI</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
-    </div>
     </div>
   </section>
 
@@ -585,138 +733,7 @@
   </section>
 
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects section section-padding">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-subtitle">My Work</div>
-        <h2 class="section-title">Featured Projects</h2>
-        <p>A showcase of my recent projects demonstrating technical skills and problem-solving abilities.</p>
-      </div>
-
-      <div class="projects-grid stagger-children">
-        <div class="project-card">
-          <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop&crop=center"
-              alt="AI Voice Assistant">
-            <div class="project-overlay">
-              <div class="project-links">
-
-                <a href="https://github.com/naseer1907/" target="_blank" class="project-link" aria-label="View Code">
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <h3>AI Desktop Voice Assistant</h3>
-            <p>
-              Advanced desktop voice assistant built with Python, featuring natural language processing,
-              task automation, and smart home integration. Supports voice commands for system control and web searches.
-            </p>
-            <div class="project-tech">
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">NLP</span>
-              <span class="skill-tag">Speech Recognition</span>
-              <span class="skill-tag">Automation Tasks</span>
-              <span class="skill-tag">API's Integration</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&h=250&fit=crop&crop=center"
-              alt="Airline Management">
-            <div class="project-overlay">
-              <div class="project-links">
-
-
-                <a href="https://github.com/naseer1907/" target="_blank" class="project-link" aria-label="View Code">
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <h3>Airline Management System</h3>
-            <p>
-              Comprehensive airline management solution with booking system, fleet management, and customer service
-              features.
-              Built with modern web technologies and secure payment integration.
-            </p>
-            <div class="project-tech">
-              <span class="skill-tag">HTML</span>
-              <span class="skill-tag">CSS</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">MySQL Workbench</span>
-              <span class="skill-tag">Responsive Design & Implementation</span>
-            </div>
-          </div>
-        </div>
-        <!--
-         <div class="project-card">
-          <div class="project-image">
-            <img src="https://via.placeholder.com/400x250/10b981/ffffff?text=Resume+Builder"
-              alt="Resume Builder Application">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" aria-label="View Project">
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
-                <a href="#" class="project-link" aria-label="View Code">
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <h3>Professional Resume Builder</h3>
-            <p>
-              Modern web application for creating professional resumes with customizable templates,
-              real-time preview, and PDF export functionality. Features drag-and-drop interface and ATS optimization.
-            </p>
-            <div class="project-tech">
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">CSS3</span>
-              <span class="skill-tag">PDF.js</span>
-              <span class="skill-tag">Responsive</span>
-            </div>
-          </div>
-        </div>
-      -->
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop&crop=center"
-              alt="Portfolio Website">
-            <div class="project-overlay">
-              <div class="project-links">
-
-                <a href="https://naseerportfolio.netlify.app" class="project-link" aria-label="View Code">
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <h3>Responsive Portfolio Website</h3>
-            <p>
-              Modern, responsive portfolio website showcasing projects and skills with smooth animations,
-              interactive elements, and optimized performance. Features adaptive color system and accessibility focus.
-            </p>
-            <div class="project-tech">
-              <span class="skill-tag">HTML5</span>
-              <span class="skill-tag">CSS3</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">Responsive</span>
-              <span class="skill-tag">Perplexity AI</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
 
 
