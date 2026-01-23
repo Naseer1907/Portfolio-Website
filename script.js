@@ -214,7 +214,7 @@ function initTypingEffect() {
   if (!typingText) return;
 
   const texts = [
-    'Programmer Analyst',
+    'Cloud Engineer',
     'Software Engineer',
     'Python Developer',
     'AI/ML Enthusiast', 
